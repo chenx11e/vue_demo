@@ -3,7 +3,7 @@
   <EmitsParentVue />
   <ExposeRefParentVue />
   <nonPropsParent />
-  <OneValueParent />
+  <OneValueParent /> <el-button @click="sendMessage">发送消息</el-button>
 </template>
 
 <script setup>
@@ -12,6 +12,8 @@
   import ExposeRefParentVue from "./view/communication/exposeRefParent.vue"
   import nonPropsParent from './view/communication/nonPropsParent.vue'
   import OneValueParent from './view/communication/vModel/OneValueParent.vue'
+  import MessageMixin from './components/Message.js';
+  export default { mixins: [MessageMixin], methods: { sendMessage () { this.sendMessage('操作成功！', 'success'); }, }, }
 </script>
 
 
