@@ -3,6 +3,7 @@
   <EmitsParentVue />
   <ExposeRefParentVue />
   <nonPropsParent />
+  <OneValueParent />
 </template>
 
 <script setup>
@@ -10,6 +11,7 @@
   import EmitsParentVue from "./view/communication/EmitsParent.vue"
   import ExposeRefParentVue from "./view/communication/exposeRefParent.vue"
   import nonPropsParent from './view/communication/nonPropsParent.vue'
+  import OneValueParent from './view/communication/vModel/OneValueParent.vue'
 </script>
 
 
