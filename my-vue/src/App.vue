@@ -3,7 +3,13 @@
   <EmitsParentVue />
   <ExposeRefParentVue />
   <nonPropsParent />
-  <OneValueParent /> <el-button @click="sendMessage">发送消息</el-button>
+  <OneValueParent />
+  <MoreValueParent />
+  <DefaultSlotParent />
+  <NameSlotParent />
+  <AreaSlotParent />
+  <provideVue />
+  <BusParent />
 </template>
 
 <script setup>
@@ -12,8 +18,12 @@
   import ExposeRefParentVue from "./view/communication/exposeRefParent.vue"
   import nonPropsParent from './view/communication/nonPropsParent.vue'
   import OneValueParent from './view/communication/vModel/OneValueParent.vue'
-  import MessageMixin from './components/Message.js';
-  export default { mixins: [MessageMixin], methods: { sendMessage () { this.sendMessage('操作成功！', 'success'); }, }, }
+  import MoreValueParent from './view/communication/vModel/MoreValueParent.vue'
+  import DefaultSlotParent from './view/communication/slot/DefaultSlotParent.vue'
+  import NameSlotParent from './view/communication/slot/NameSlotParent.vue'
+  import AreaSlotParent from './view/communication/slot/AreaSlotParent.vue'
+  import provideVue from './view/communication/Provide.vue'
+  import BusParent from './view/communication/bus/BusParent.vue'
 </script>
 
 
