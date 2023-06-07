@@ -5,5 +5,22 @@
 
 props
 
-emit
+emits
 
+expose/ref
+
+non-props
+
+v-model
+
+slot
+
+provide/inject
+
+bus
+
+vuex
+
+pinia
+
+https://juejin.cn/post/7069251532339806238
