@@ -10,6 +10,8 @@
   <AreaSlotParent />
   <provideVue />
   <BusParent />
+  <!-- <VuexTest /> -->
+  <PiniaTest />
 </template>
 
 <script setup>
@@ -24,6 +26,8 @@
   import AreaSlotParent from './view/communication/slot/AreaSlotParent.vue'
   import provideVue from './view/communication/Provide.vue'
   import BusParent from './view/communication/bus/BusParent.vue'
+  // import VuexTest from './view/communication/vuex/store/test.vue'
+  import PiniaTest from './view/communication/pinia/store/test.vue'
 </script>
 
 

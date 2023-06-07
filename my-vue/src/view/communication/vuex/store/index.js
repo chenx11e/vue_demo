@@ -2,12 +2,24 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    msg:'我是store的hello'
   },
   getters: {
+    getMsg(state){
+      return state.msg+'啊对对对'
+    }
   },
   mutations: {
+    changeMsg(state,data){
+      state.msg=data
+    }
   },
   actions: {
+    fetchMsg(context){
+      setTimeout(()=>{
+        context.commit('changeMsg','action的作用呢')
+      },1000)
+    }
   },
   modules: {
   }
