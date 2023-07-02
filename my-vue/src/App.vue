@@ -12,10 +12,12 @@
   <BusParent />
   <!-- <VuexTest /> -->
   <PiniaTest />
+  <FocusTest />
+  <getCurrentInstanceTest />
 </template>
 
 <script setup>
-  import propsParentVue from "./view/communication/propsParent.vue";
+  import propsParentVue from "./view/communication/propsParent.vue"
   import EmitsParentVue from "./view/communication/EmitsParent.vue"
   import ExposeRefParentVue from "./view/communication/exposeRefParent.vue"
   import nonPropsParent from './view/communication/nonPropsParent.vue'
@@ -28,6 +30,8 @@
   import BusParent from './view/communication/bus/BusParent.vue'
   // import VuexTest from './view/communication/vuex/store/test.vue'
   import PiniaTest from './view/communication/pinia/store/test.vue'
+  import FocusTest from './view/v-focus/FocusTest.vue'
+  import getCurrentInstanceTest from './view/Vue3API/API_getCurrentInstance/index.vue'
 </script>
 
 
